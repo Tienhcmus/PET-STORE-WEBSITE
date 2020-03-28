@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEMINAR</title>
+    <!-- Import Bootstrap, js and font awesome -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="pet-store" width="30" height="30">
+                </a>
+                <!-- Login -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"> Tài khoản </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Đăng ký </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Đăng nhập </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Menu-->
+        <div class="menu" style="background-color: #17a2b8; z-index: 2; width: 100%;">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm bg-info navbar-dark position-sticky"
+                    style="z-index: 2; padding: 0;">
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Trang chủ </a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown"> Hệ thống thú cưng
+                            </a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#"> Chó </a>
+                                <a class="dropdown-item" href="#"> Mèo </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown"> Sản phẩm
+                            </a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#"> Thức ăn cho chó </a>
+                                <a class="dropdown-item" href="#"> Thức ăn cho mèo </a>
+                                <a class="dropdown-item" href="#"> Sữa tắm </a>
+                                <a class="dropdown-item" href="#"> Phụ kiện </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown"> Diễn đàn
+                            </a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="#"> Cách chăm sóc chó </a>
+                                <a class="dropdown-item" href="#"> Cách chăm sóc mèo </a>
+                                <a class="dropdown-item" href="#"> Các dạng bệnh thường gặp và cách chữa trị </a>
+                                <a class="dropdown-item" href="#"> Lịch trình tiêm ngừa vắc xin </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Tin tức thú cưng </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Liên hệ </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div id="slides" class="carousel slide" data-ride="carousel" style="z-index: 1;">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+                <li data-target="#slides" data-slide-to="3"></li>
+                <li data-target="#slides" data-slide-to="4"></li>
+                <li data-target="#slides" data-slide-to="5"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a class="link-image" href="index.html"><img src="./images/about1.jpg" alt="Trang-chu"></a>
+                </div>
+                <div class="carousel-item">
+                    <a class="link-image" href="#"><img src="./images/about1.jpg" alt="He-thong-thu-cung"></a>
+                </div>
+                <div class="carousel-item">
+                    <a class="link-image" href="#"><img src="./images/about1.jpg" alt="San-pham"></a>
+                </div>
+                <div class="carousel-item">
+                    <a class="link-image" href="#"><img src="./images/about1.jpg" alt="Dien-dan"></a>
+                </div>
+                <div class="carousel-item">
+                    <a class="link-image" href="#"><img src="./images/about1.jpg" alt="Tin-tuc"></a>
+                </div>
+                <div class="carousel-item">
+                    <a class="link-image" href="#"><img src="./images/about1.jpg" alt="Lien-he"></a>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slides" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+    <!--End Header -->
+
+    <!-- Content -->
+    <div>
+        <div>
+            <!-- Danh sách thú cưng -->
+            <div class="container padding">
+                <div class="row mt-5">
+                    <h2 class="list-product-title"><a class="link-title" href="#"> Hệ thống thú cưng </a></h2>
+                    <div class="list-product-subtitle">
+                        <p>Danh sách thú cưng</p>
+                        <hr />
+                    </div>
+                    <div class="product-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Pet-0"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Tên Pet </h5>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Pet-1"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Tên Pet </h5>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Pet-2"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Tên Pet </h5>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Pet-3"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Tên Pet </h5>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <!-- Danh sách sản phẩm mới -->
+            <div class="container padding">
+                <div class="row mt-5">
+                    <h2 class="list-product-title"><a class="link-title" href="#"> Sản phẩm mới </a></h2>
+                    <div class="list-product-subtitle">
+                        <p>Danh sách sản phẩm mới</p>
+                        <hr class="my-4" />
+                    </div>
+                    <div class="product-group">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Product-0"></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"> Tên Sản Phẩm </h6>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Product-1"></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"> Tên Sản Phẩm </h6>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Product-2"></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"> Tên Sản Phẩm </h6>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="card card-product mb-3">
+                                    <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                            alt="Product-3"></a>
+                                    <div class="card-body">
+                                        <h6 class="card-title"> Tên Sản Phẩm </h6>
+                                        <p class="card-text"> Mô tả </p>
+                                        <a href="#" class="btn btn-primary">Mua</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container padding">
+            <hr class="my-4" />
+        </div>
+        <div>
+            <!-- Diễn dàn -->
+            <div class="container padding">
+                <div class="row padding">
+                    <div class="col-md-12 col-lg-6">
+                        <h2> <a class="link-title" href="#"> Diễn đàn </a> </h2>
+                        <p> Nơi cung cấp thông tin cần thiết cho người nuôi </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="link-image" href="#"><img src="./images/pet-care.jpg" alt="pet-care"
+                                class="img-fluid"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="product-group">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="card card-product mb-3">
+                                <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                        alt="dien-dan-0"></a>
+                                <div class="card-body">
+                                    <h6 class="card-title"> Cách chăm sóc chó </h6>
+                                    <p class="card-text"> Nội dung </p>
+                                    <a href="#" class="btn btn-primary"> Xem thêm </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="card card-product mb-3">
+                                <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                        alt="dien-dan-1"></a>
+                                <div class="card-body">
+                                    <h6 class="card-title"> Cách chăm sóc mèo </h6>
+                                    <p class="card-text"> Nội dung </p>
+                                    <a href="#" class="btn btn-primary"> Xem thêm </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="card card-product mb-3">
+                                <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                        alt="dien-dan-2"></a>
+                                <div class="card-body">
+                                    <h6 class="card-title"> Các loại bệnh thường gặp </h6>
+                                    <p class="card-text"> Nội dung </p>
+                                    <a href="#" class="btn btn-primary"> Xem thêm </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12">
+                            <div class="card card-product mb-3">
+                                <a class="link-image" href="#"><img class="card-img-top" src="./images/works/1.jpg"
+                                        alt="dien-dan-3"></a>
+                                <div class="card-body">
+                                    <h6 class="card-title"> Lịch trình tiêm ngừa vắc xin </h6>
+                                    <p class="card-text"> Nội dung </p>
+                                    <a href="#" class="btn btn-primary"> Xem thêm </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container padding">
+            <hr class="my-4" />
+        </div>
+        <div>
+            <!-- Tin tức -->
+            <div class="container padding">
+                <div class="row padding">
+                    <div class="col-lg-6">
+                        <a class="link-image" href="#"><img src="./images/pet-news.jpg" alt="pet-care"
+                                class="img-fluid"></a>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <h2> <a class="link-title" href="#"> Tin tức thú cưng </a> </h2>
+                        <p> Nơi cung cấp thông tin cần thiết cho người nuôi </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container padding">
+            <hr class="my-4" />
+        </div>
+        <div>
+            <!-- Liên hệ -->
+            <div class="container padding">
+                <div class="row padding">
+                    <div class="col-md-12 col-lg-6">
+                        <h2> <a class="link-title" href="#"> Thông tin liên hệ </a> </h2>
+                        <p class="fas fa-home"> Địa chỉ cửa hàng: 227 Đường Nguyễn Văn Cừ, Phường 4, Quận 5, Hồ Chí Minh
+                        </p>
+                        <p class="fa fa-phone"> Số điện thoại: 0975814755 </p>
+                        <p class="fas fa-plus-square"> Địa chỉ phòng khám: 227 Đường Nguyễn Văn Cừ, Phường 4, Quận 5, Hồ
+                            Chí Minh </p>
+                        <p class="fa fa-phone"> Số điện thoại: 0975814755 </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.637215381392!2d106.67900811480058!3d10.762417592331024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1bfc262bf1%3A0x4e843897f2900135!2zMjI3IMSQxrDhu51uZyBOZ3V54buFbiBWxINuIEPhu6ssIFBoxrDhu51uZyA0LCBRdeG6rW4gNSwgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1sen!2s!4v1585388062839!5m2!1sen!2s"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Liên hệ -->
+
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid" style="background-color: gray; margin: 20px;">
+            <div class="row">
+                <div class="col-md-4" style="padding: 50px; font-size: 22px;">
+                    <div class="row">
+                        <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px;">
+                            <a class="link-brand" href="contact.html"><img src="./images/logo.png" alt="Pet-Store"
+                                width="100px" height="100px" ></a>
+                        </div>
+                        <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px;">
+                            <h1>Pet Store</h1>
+                        </div>
+                    </div>
+                    <p><i class="fas fa-home"></i> Địa chỉ cửa hàng: 227 Đường Nguyễn Văn Cừ, Phường 4, Quận 5, Hồ Chí
+                        Minh </p>
+                    <p><i class="fa fa-phone"></i> Số điện thoại: 0975814755 </p>
+                    <p><i class="fas fa-plus-square"></i> Địa chỉ phòng khám: 227 Đường Nguyễn Văn Cừ, Phường 4, Quận 5,
+                        Hồ Chí Minh </p>
+                    <p><i class="fa fa-phone"></i> Số điện thoại: 0975814755 </p>
+                </div>
+                <div class="col-md-4">
+                    <h1 style="padding-top: 70px">Giờ làm việc</h1>
+                    <h6>Sáng từ 7:00 - 11:30</h6>
+                    <h6>Chiều từ 13:00 - 18:30</h6>
+                    <h6>Hoạt động từ thứ 2 đến chủ nhật hàng tuần</h6>
+                    <h6>Trừ những ngày lễ, tết</h6>
+                </div>
+                <div class="col-md-4">
+                    <h2 style="padding-top: 75px">Dịch vụ cung cấp</h2>
+                    <h6>Cung cấp thú cưng và phụ kiện</h6>
+                    <h6>Hỗ trợ chăm sóc thú cưng</h6>
+                    <h6>Tư vấn và hướng dẫn</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</html>
