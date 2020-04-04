@@ -76,6 +76,13 @@ a:hover{
   position: fixed;
   top: 0;
 }
+.sticky-sidebar{
+  position: -webkit-sticky;
+	position: sticky;
+	top: 70px;
+    
+  padding: 0 15px;
+}
 .pull-left {
 	float: left !important;
 }
