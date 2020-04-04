@@ -59,7 +59,6 @@
 .card-news h4,
 .card-news p {
   line-height: 1.5em;
-  -webkit-transform: translateX(-30px);
   transform: translateX(-30px);
   margin: 0;
 }
