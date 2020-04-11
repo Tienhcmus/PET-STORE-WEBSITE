@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 html,
 body {
@@ -143,8 +142,6 @@ a:hover {
     height: 60%;
   }
 }
-
-/* Form Contact CSS */
 .form {
   width: 340px;
   height: 440px;
