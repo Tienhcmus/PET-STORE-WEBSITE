@@ -21,6 +21,7 @@ a {
 }
 .navbar li a {
   color: black !important;
+  font-size: large;
 }
 .navbar li a:hover {
   background-color: #4b9dff !important;
@@ -179,5 +180,24 @@ button {
 }
 button:hover {
   background: #78788c;
-  color: #fff;
+  color: white;
+}
+#header-button{
+  border: none !important;
+}
+#header-button:hover{
+  border: none !important;
+}
+input[type="search"]{
+  background-color: #17a2b8 ;
+  outline: none;
+  border: none;
+}
+input[type="search"]::placeholder{
+  text-decoration: underline;
+  color: white !important;
+}
+input[type="search"]:focus{
+  background-color: #17a2b8 ;
+  color:white;
 }
