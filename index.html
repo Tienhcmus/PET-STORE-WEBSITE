@@ -15,9 +15,9 @@
 
 </head>
 
-<body>
-     <!-- Header -->
-     <header>
+<body data-spy="scroll" data-target=".sticky-sidebar .dropdown-content" data-offset="50">
+    <!-- Header -->
+    <header>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-md"
             style="background-color: rgb(242, 241, 236); padding-top: 0; padding-bottom: 0;">
@@ -107,10 +107,10 @@
                         <a class="nav-link" href="product.html" id="navbarDropdown"> Sản phẩm
                         </a>
                         <div class="dropdown-content">
-                            <a class="dropdown-item" href="dog-food.html"> Thức ăn cho chó </a>
-                            <a class="dropdown-item" href="/cat-food.html"> Thức ăn cho mèo </a>
-                            <a class="dropdown-item" href="sua-tam.html"> Sữa tắm </a>
-                            <a class="dropdown-item" href="other-product.html"> Phụ kiện </a>
+                            <a class="dropdown-item" href="product.html#dog-food"> Thức ăn cho chó </a>
+                            <a class="dropdown-item" href="product.html#cat-food"> Thức ăn cho mèo </a>
+                            <a class="dropdown-item" href="product.html#sua-tam"> Sữa tắm </a>
+                            <a class="dropdown-item" href="product.html#other-product"> Phụ kiện </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -132,15 +132,16 @@
                 </ul>
                 <div class="navbar-nav ml-auto">
                     <!--Searching-->
-                <form class="form-inline my-2 my-md-0">
-                    <div>
-                        <input class="form-control mr-sm-2" type="search" placeholder="Tìm Kiếm Sản Phẩm" aria-label="Search">
-                    <i class="fas fa-search" style="color: white; padding-right: 20px;"></i>
-                    </div>
-                    
-                </form>
+                    <form class="form-inline my-2 my-md-0">
+                        <div>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm Kiếm Sản Phẩm"
+                                aria-label="Search">
+                            <i class="fas fa-search" style="color: white; padding-right: 20px;"></i>
+                        </div>
+
+                    </form>
                 </div>
-                
+
             </nav>
         </div>
         <!-- Modal Sign up -->
