@@ -21,7 +21,7 @@ a {
 }
 .navbar li a {
   color: black !important;
-  font-size: large;
+  font-size: x-large;
 }
 .navbar li a:hover {
   background-color: #4b9dff !important;
@@ -198,4 +198,7 @@ input[type="search"]::placeholder{
 input[type="search"]:focus{
   background-color: #17a2b8 ;
   color:white;
+}
+input[type="radio"]{
+  width: 10%;
 }
