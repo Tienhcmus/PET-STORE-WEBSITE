@@ -116,7 +116,7 @@ $(function(){
      function check_rpsw() {
         let psw = $("#sign_up_psw").val();
         let rpsw = $("#sign_up_rpsw").val();
-        if (psw !== rpsw && rpsw !== '') {
+        if (psw !== rpsw || rpsw == '') {
            $("#rpsw_error_message").html("Chưa chính xác");
            $("#rpsw_error_message").show();
            $("#sign_up_rpsw").css("border","1px solid #F90A0A");
