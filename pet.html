@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="modal.css" />
+    <link rel="stylesheet" type="text/css" href="cart.css" />
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
@@ -23,15 +24,47 @@
             style="background-color: rgb(242, 241, 236); padding-top: 0; padding-bottom: 0;">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="./images//logo/Brand1.png" alt="pet-store" width="40%" height="40%">
+                <a class="navbar-brand" href="#" style="width: 100px;">
+                    <img src="./images//logo/Brand1.png" alt="pet-store" width="150%" height="150%">
                 </a>
                 <!-- Login -->
-                <ul class="navbar-nav ml-auto" style="font-size: medium;">
+                <ul class="navbar-nav ml-auto" style="font-size: large;">
                     <li class="nav-item">
-                        <button id="header-button" type="button" data-toggle="#" data-target="#">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
+                        <div class="dropdown">
+                            <button id="header-button" type="button" data-toggle="dropdown" data-target="shopping-cart"
+                                class="dropdown-toggle">
+                                <i class="fas fa-shopping-cart"> </i> <span class="badge badge-danger">3</span></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="shopping-cart">
+                                    <ul class="shopping-cart-items">
+                                        <li class="clearfix">
+                                            <img src="./images/works/1.jpg" alt="item1" />
+                                            <span class="item-name">Product 1</span>
+                                            <span class="item-price">$849.99</span>
+                                            <span class="item-quantity">Số lượng: 01</span>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li class="clearfix">
+                                            <img src="./images/works/1.jpg" alt="item1" />
+                                            <span class="item-name">Product 2</span>
+                                            <span class="item-price">$1,249.99</span>
+                                            <span class="item-quantity">Số lượng: 01</span>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li class="clearfix">
+                                            <img src="./images/works/1.jpg" alt="item1" />
+                                            <span class="item-name">Product 3</span>
+                                            <span class="item-price">$129.99</span>
+                                            <span class="item-quantity">Số lượng: 01</span>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-divider"></div>
+                                    <p>Tổng tiền: </p>
+                                    <a href="#" class="check-out">Thanh Toán</a>
+
+                                </div>
+                            </div>
                     </li>
                     <li class="nav-item">
                         <button id="header-button" type="button" data-toggle="modal" data-target="#Signup">
@@ -148,34 +181,78 @@
         <div class="modal fade" id="Signup">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form>
+                    <form id="signupform">
                         <div class="container">
                             <h3>Đăng Ký</h3>
                             <p>Vui lòng điền vào mẫu này để tạo một tài khoản.</p>
                             <hr>
-
-                            <label for="fname"><b>Tên</b></label>
-                            <input type="text" placeholder="Enter First Name" name="firstname" required>
-
-                            <label for="lname"><b>Họ</b></label>
-                            <input type="text" placeholder="Enter Last Name" name="lastname" required>
-
-                            <label for="phone"><b>Số điện thoại</b></label>
-                            <input type="number" placeholder="Enter Phone Number" name="phone" required>
-
-                            <label for="address"><b>Địa chỉ</b></label>
-                            <input type="text" placeholder="Enter Address" name="address" required>
-
-                            <label for="email"><b>Tên Đăng Nhập</b></label>
-                            <input type="text" placeholder="Enter User Name" name="username" required>
-
-                            <label for="psw"><b>Mật Khẩu</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-
-                            <label for="psw-repeat"><b>Xác Nhận Mật Khẩu</b></label>
-                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="fname"><b>Tên</b></label>
+                                    <input type="text" placeholder="Enter First Name" name="firstname"
+                                        id="sign_up_fname">
+                                    <span class="error-form" id="fname_error_message"></span>
+                                </div>
+                                <div class="col-6">
+                                    <label for="lname"><b>Họ</b></label>
+                                    <input type="text" placeholder="Enter Last Name" name="lastname" id="sign_up_lname">
+                                    <span class="error-form" id="lname_error_message"></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="address"><b>Địa chỉ</b></label>
+                                </div>
+                                <div class="col-9" style="padding-left: 0px;">
+                                    <input type="text" placeholder="Enter Address" name="address" id="sign_up_addr">
+                                    <span class="error-form" id="addr_error_message"></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-3" style="padding-right: 0px;">
+                                    <label for="phone" style="margin-top: 0px;"><b>Số điện thoại</b></label>
+                                </div>
+                                <div class="col-9" style="padding-left: 0px;">
+                                    <input type="number" placeholder="Enter Phone Number" name="phone"
+                                        id="sign_up_phone">
+                                    <span class="error-form" id="phone_error_message"></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-4" style="padding-right: 0px;">
+                                    <label for="email"><b>Tên Đăng Nhập</b></label>
+                                </div>
+                                <div class="col-8" style="padding-left: 0px;">
+                                    <input type="text" placeholder="Enter User Name" name="username"
+                                        id="sign_up_username">
+                                    <span class="error-form" id="username_error_message"></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-4" style="padding-right: 0px;">
+                                    <label for="psw"><b>Mật Khẩu</b></label>
+                                </div>
+                                <div class="col-8" style="padding-left: 0px;">
+                                    <input type="password" placeholder="Enter Password" name="psw" id="sign_up_psw">
+                                    <span class="error-form" id="psw_error_message"></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-4" style="padding-right: 0px;">
+                                    <label for="psw-repeat"><b>Xác Nhận Mật Khẩu</b></label>
+                                </div>
+                                <div class="col-8" style="padding-left: 0px;">
+                                    <input type="password" placeholder="Repeat Password" name="pswrepeat"
+                                        id="sign_up_rpsw">
+                                    <span class="error-form" id="rpsw_error_message"></span>
+                                </div>
+                            </div>
                             <hr>
-
                             <button type="submit" class="registerbtn">Đăng Ký Tài Khoản</button>
                         </div>
                     </form>
@@ -193,11 +270,23 @@
                             <p>Vui lòng điền vào mẫu này để đăng nhập tài khoản.</p>
                             <hr>
 
-                            <label for="email"><b>Tên Đăng Nhập</b></label>
-                            <input type="text" placeholder="Enter User Name" name="username" required>
-
-                            <label for="psw"><b>Mật Khẩu</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <div class="row">
+                                <div class="col-3" style="padding-right: 0px;">
+                                    <label for="email"><b>Tên Đăng Nhập</b></label>
+                                </div>
+                                <div class="col-9" style="padding-left: 0px;">
+                                    <input type="text" placeholder="Enter User Name" name="username" required>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-3" style="padding-right: 0px;">
+                                    <label for="psw"><b>Mật Khẩu</b></label>
+                                </div>
+                                <div class="col-9" style="padding-left: 0px;">
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                </div>
+                            </div>
 
                             <hr>
 
