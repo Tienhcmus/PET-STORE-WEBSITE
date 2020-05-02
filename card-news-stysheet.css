@@ -1,7 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400);
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 .card-news {
-  font-family: "Playfair Display", Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 5px;
@@ -139,7 +136,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.news-icon{
+.news-icon img{
     width: 200px;
     height: 200px;
     float: left;
@@ -149,19 +146,18 @@
     margin-left: 10px;
 }
 .news-title{
-    font-size: 30px;
-    height: 50px;
+    font-size: 25px;
     text-align: left;
     text-justify: newspaper;
+    font-weight: bold;
 }
 .news-content{
     font-size: 15px;
     height: 120px;
-    width: 100%;
+    overflow: hidden;
 }
 .date-time{
     font-size: x-small;
     font-style: italic;
-    text-align: left;
-    height: 30px;
+    text-align: right;
 }
