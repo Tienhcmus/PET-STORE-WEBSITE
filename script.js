@@ -7,12 +7,6 @@ function onScroll(e) {
 };
 document.addEventListener('scroll', onScroll);
 
-const $tableID = $('#table');
-$tableID.on('click', '.table-remove', function () {
-
-    $(this).parents('tr').detach();
-});
-
 sum();
 
 $('.plus').click(function (e) {
