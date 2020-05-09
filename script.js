@@ -13,8 +13,6 @@ $('.plus').click(function (e) {
     e.preventDefault();
     let sp = parseFloat($(this).prev('span').text());
     $(this).prev('span').text(sp + 1);
-    sumproduct++;
-    $('#sumproduct').html(sumproduct);
     sum();
 });
 
@@ -24,8 +22,6 @@ $('.minus').click(function (e) {
     $(this).next('span').text(sp - 1);
     if (!isNaN(sp) && sp > 0) {
         $(this).next('span').text(sp - 1);
-        sumproduct--;
-        $('#sumproduct').html(sumproduct);
         sum();
     } else {
         $(this).next('span').text(0);
