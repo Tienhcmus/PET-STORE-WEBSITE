@@ -4,7 +4,6 @@ $(function(){
     $("#lname_error_message").hide();
     $("#addr_error_message").hide();
     $("#phone_error_message").hide();
-    $("#username_error_message").hide();
     $("#psw_error_message").hide();
     $("#rpsw_error_message").hide();
 
@@ -12,7 +11,6 @@ $(function(){
     let error_lname = false;
     let error_addr = false;
     let error_phone = false;
-    let error_username = false;
     let error_psw = false;
     let error_rpsw = false;
 
@@ -28,9 +26,6 @@ $(function(){
      $("#sign_up_phone").focusout(function(){
          check_phone();
      })
-     $("#sign_up_username").focusout(function() {
-        check_username();
-     });
      $("#sign_up_psw").focusout(function() {
         check_psw();
      });
@@ -87,19 +82,6 @@ $(function(){
             error_phone = true;
          }
      };
-     function check_username() {
-        let pattern = /\w{3,15}/;
-        let username = $("#sign_up_username").val();
-        if (pattern.test(username) && username !== '') {
-           $("#username_error_message").hide();
-           $("#sign_up_username").css("border","1px solid #34F458");
-        } else {
-           $("#username_error_message").html("Tên tài khoản phải từ 3-15 ký tự và không có khoản trống");
-           $("#username_error_message").show();
-           $("#sign_up_username").css("border","1px solid #F90A0A");
-           error_username = true;
-        }
-     };
      function check_psw() {
         let pattern = /[\w\W]{6,18}/;
         let psw = $("#sign_up_psw").val();
@@ -131,19 +113,17 @@ $(function(){
         error_lname = false;
         error_addr = false;
         error_phone = false;
-        error_username = false;
         error_psw = false;
         error_rpsw = false;
 
         check_fname();
         check_lname();
         check_addr();
-        check_phone()
-        check_username()
+        check_phone();
         check_psw();
         check_rpsw();
 
-        if (error_fname === false && error_lname === false && error_addr === false && error_phone === false && error_username === false && error_psw === false && error_rpsw === false) {
+        if (error_fname === false && error_lname === false && error_addr === false && error_phone === false && error_psw === false && error_rpsw === false) {
            alert("Đăng ký thành công");
            return true;
         } else {

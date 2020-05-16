@@ -67,8 +67,8 @@ $('.logout').click(function (){
 $('.show-history').click(function (){
     $('.manage-pet').hide();
     $('.history-cart').show();
-})
+});
 $('.show-manage').click(function (){
     $('.manage-pet').show();
     $('.history-cart').hide();
-})
+});
