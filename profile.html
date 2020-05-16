@@ -325,11 +325,11 @@
             <div class="col-3" style="padding-top:70px">
                 <div class="sticky-sidebar">
                     <ul class="aside-menu" style="font-size: medium;">
-                        <li><a class="show-history" href="#profile"><i class="far fa-clipboard"></i> Lịch sử mua
-                                hàng</a></li>
+                        <li><a class="show-history" href="#profile"><i class="far fa-clipboard"></i> Lịch sử mua hàng</a></li>
                         <hr>
-                        <li><a class="show-manage" href="#profile"><i class="fas fa-book-medical"></i> Lịch tiêm ngừa
-                                thú cưng</a></li>
+                        <li><a class="show-manage" href="#profile"><i class="fas fa-book-medical"></i> Lịch tiêm ngừa thú cưng</a></li>
+                        <hr>
+                        <li><a class="update-profile" href="#profile"><i class="far fa-folder-open"></i> Cập nhật hồ sơ</a></li>
                     </ul>
                 </div>
             </div>
@@ -612,6 +612,61 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="profile-edit">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#profile-details">Hồ Sơ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#change-psw">Mật Khẩu</a>
+                        </li>
+                      </ul>
+                    
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div id="profile-details" class="container tab-pane active"><br>
+                            <h5>Cập Nhật Hồ Sơ</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="fname"><b>Tên</b></label>
+                                    <input type="text" placeholder="Tiến" name="firstname" id="fname-profile">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname"><b>Họ</b></label>
+                                    <input type="text" placeholder="Minh" name="lastname" id="lname-profile">
+                                </div>
+                                <div class="form-group">
+                                    <label for="address"><b>Địa chỉ</b></label>
+                                    <input type="text" placeholder="Thành Phố Hồ Chí Minh" name="address" id="addr-profile">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone"><b>Số điện thoại</b></label>
+                                    <input type="number" placeholder="0975814755" name="phone" id="phone-profile">
+                                </div>
+                                <button type="submit" class="btn btn-light">Cập Nhật</button>
+                            </form>
+                        </div>
+                        <div id="change-psw" class="container tab-pane fade"><br>
+                            <h5>Thay Đổi Mật Khẩu</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="old-psw"><b>Mật Khẩu Cũ</b></label>
+                                    <input type="password" placeholder="Nhập Mật Khẩu Cũ" name="old-password" id="psw-profile">
+                                </div>
+                                <div class="form-group">
+                                    <label for="new-psw"><b>Mật Khẩu Mới</b></label>
+                                    <input type="password" placeholder="Nhập Mật Khẩu Mới" name="new-password" id="new-psw-profile">
+                                </div>
+                                <div class="form-group">
+                                    <label for="rp-new-psw"><b>Xác Nhận Mật Khẩu</b></label>
+                                    <input type="password" placeholder="Xác Nhận Mật Khẩu" name="repeat-password" id="rp-psw-profile">
+                                </div>
+                                <button type="submit" class="btn btn-light">Cập Nhật</button>
+                            </form>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
