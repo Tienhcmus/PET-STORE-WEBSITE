@@ -66,14 +66,24 @@
                                 </div>
                             </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item unsignin">
                         <button id="header-button" type="button" data-toggle="modal" data-target="#Signup">
                             Đăng Ký
                         </button>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item unsignin">
                         <button id="header-button" type="button" data-toggle="modal" data-target="#Signin">
                             Đăng Nhập
+                        </button>
+                    </li>
+                    <li class="nav-item sign-in">
+                        <button id="header-button" type="button" class="username">
+                            Tên Người Dùng
+                        </button>
+                    </li>
+                    <li class="nav-item sign-in">
+                        <button id="header-button" type="button" class="logout">
+                            Đăng Xuất
                         </button>
                     </li>
                 </ul>
@@ -96,7 +106,7 @@
                     <a class="link-image" href="product.html"><img src="./images/Banner/banner2.jpg" alt="Sanpham"></a>
                 </div>
                 <div class="carousel-item">
-                    <a class="link-image" href="cham-soc.html"><img src="./images/Banner/banner3.jpg" alt="chamsoc"></a>
+                    <a class="link-image" href="dien-dan.html"><img src="./images/Banner/banner3.jpg" alt="chamsoc"></a>
                 </div>
                 <div class="carousel-item">
                     <a class="link-image" href="tin-tuc.html"><img src="./images/Banner/banner4.jpg" alt="tintuc"></a>
@@ -139,7 +149,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="cham-soc.html" id="navbarDropdown"> Chăm sóc thú cưng
+                        <a class="nav-link" href="dien-dan.html" id="navbarDropdown"> Chăm sóc thú cưng
                         </a>
                         <div class="dropdown-content">
                             <a class="dropdown-item" href="#"> Cách chăm sóc chó </a>
@@ -166,7 +176,6 @@
 
                     </form>
                 </div>
-
             </nav>
         </div>
         <!-- Modal Sign up -->
@@ -261,7 +270,6 @@
                             <h3>Đăng Nhập</h3>
                             <p>Vui lòng điền vào mẫu này để đăng nhập tài khoản.</p>
                             <hr>
-
                             <div class="row">
                                 <div class="col-3" style="padding-right: 0px;">
                                     <label for="email"><b>Tên Đăng Nhập</b></label>
@@ -279,12 +287,9 @@
                                     <input type="password" placeholder="Enter Password" name="psw" required>
                                 </div>
                             </div>
-
                             <hr>
-
-                            <button type="submit" class="registerbtn">Đăng Nhập</button>
+                            <button id="login-btn" type="submit" class="registerbtn">Đăng Nhập</button>
                         </div>
-
                         <div class="container forgotpsw" style="padding-top: 0px;">
                             <a href="#">Quên Mật Khẩu?</a>
                         </div>
@@ -603,13 +608,14 @@
             </div>
         </div>
     </footer>
+    <!--End Footer -->
 </body>
-<script src="./script.js"></script>
+
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-<script src="./validation.js"></script>
 <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
+<script src="./script.js"></script>
+<script src="./validation.js"></script>
 </html>

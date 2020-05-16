@@ -39,41 +39,51 @@
                             <div class="shopping-cart">
                                 <ul class="shopping-cart-items">
                                     <li class="clearfix">
-                                        <img src="./images/works/1.jpg" alt="item1" />
-                                        <span class="item-name">Product 1</span>
-                                        <span class="item-price">$849.99</span>
+                                        <img src="./images/pet/phu-kien/vong-co-0.jpg" alt="item1" />
+                                        <span class="item-name">Vòng Cổ - 000</span>
+                                        <span class="item-price">100.000</span>
                                         <span class="item-quantity">Số lượng: 01</span>
                                     </li>
                                     <div class="dropdown-divider"></div>
                                     <li class="clearfix">
-                                        <img src="./images/works/1.jpg" alt="item1" />
-                                        <span class="item-name">Product 2</span>
-                                        <span class="item-price">$1,249.99</span>
+                                        <img src="./images/pet/phu-kien/vong-co-4.jpg" alt="item1" />
+                                        <span class="item-name">Vòng Kim Loại</span>
+                                        <span class="item-price">100.000</span>
                                         <span class="item-quantity">Số lượng: 01</span>
                                     </li>
                                     <div class="dropdown-divider"></div>
                                     <li class="clearfix">
-                                        <img src="./images/works/1.jpg" alt="item1" />
-                                        <span class="item-name">Product 3</span>
-                                        <span class="item-price">$129.99</span>
+                                        <img src="./images/pet/sua-tam/sua-tam-0.jpg" alt="item1" />
+                                        <span class="item-name">Sữa Tắm S.O.S</span>
+                                        <span class="item-price">100.000</span>
                                         <span class="item-quantity">Số lượng: 01</span>
                                     </li>
                                 </ul>
                                 <div class="dropdown-divider"></div>
-                                <p>Tổng tiền: </p>
+                                <p>Tổng tiền: 300.000</p>
                                 <a href="#" class="check-out">Thanh Toán</a>
 
                             </div>
                         </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item unsignin">
                     <button id="header-button" type="button" data-toggle="modal" data-target="#Signup">
                         Đăng Ký
                     </button>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item unsignin">
                     <button id="header-button" type="button" data-toggle="modal" data-target="#Signin">
                         Đăng Nhập
+                    </button>
+                </li>
+                <li class="nav-item sign-in">
+                    <button id="header-button" type="button" class="username">
+                        Tên Người Dùng
+                    </button>
+                </li>
+                <li class="nav-item sign-in">
+                    <button id="header-button" type="button" class="logout">
+                        Đăng Xuất
                     </button>
                 </li>
             </ul>
@@ -282,7 +292,7 @@
 
                         <hr>
 
-                        <button type="submit" class="registerbtn">Đăng Nhập</button>
+                        <button id="login-btn" type="submit" class="registerbtn">Đăng Nhập</button>
                     </div>
 
                     <div class="container forgotpsw" style="padding-top: 0px;">
@@ -295,6 +305,320 @@
     </div>
 </header>
 <!--End Header -->
+
+<!-- Content -->
+<div class="container" style="padding: 20px;">
+    <div class="container">
+        <div class="pull-left">
+            <h3 class="inner-title">Trang Cá Nhân</h3>
+        </div>
+        <div class="pull-right">
+            <div class="beta-breadcrumb font-large">
+                <a href="index.html">Home</a> / <span>Profile</span>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3" style="padding-top:70px">
+            <div class="sticky-sidebar">
+                <ul class="aside-menu" style="font-size: medium;">
+                    <li><a class="show-history" href="#profile"><i class="far fa-clipboard"></i> Lịch sử mua hàng</a></li>
+                    <hr>
+                    <li><a class="show-manage" href="#profile"><i class="fas fa-book-medical"></i> Lịch tiêm ngừa thú cưng</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-9" id="profile" style="padding-top:70px">
+            <div class="history-cart">
+                <h5>Lịch Sử Mua Hàng</h5>
+                <table  id="table" class="table table-bordered text-center">
+                    <thead>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Ngày
+                        </th>
+                        <th>
+                            Tổng Tiền
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                01
+                            </td>
+                            <td>
+                                05/05/2020 12:30
+                            </td>
+                            <td>
+                                1000000 VNĐ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                02
+                            </td>
+                            <td>
+                                07/05/2020 12:30
+                            </td>
+                            <td>
+                                1000000 VNĐ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                03
+                            </td>
+                            <td>
+                                03/05/2020 12:30
+                            </td>
+                            <td>
+                                1000000 VNĐ
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="manage-pet">
+                <h5>Lịch Tiêm Ngừa Thú Cưng</h5>
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Xá Xíu: Mèo Tai Cụp
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                      <div class="card-body">
+                          <span> Giới Tính: Đực </span>
+                            <table  id="table" class="table table-bordered text-center">
+                                <thead>
+                                    <th>
+                                        STT
+                                    </th>
+                                    <th>
+                                       Tên vaccine
+                                    </th>
+                                    <th>
+                                        Thời gian
+                                    </th>
+                                    <th>
+                                        Tình trạng
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            01
+                                        </td>
+                                        <td>
+                                           Vaccine Phòng Bệnh Dại
+                                        </td>
+                                        <td>
+                                            Từ 2 - 4 tháng tuổi
+                                        </td>
+                                        <td>
+                                            Đã Tiêm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            02
+                                        </td>
+                                        <td>
+                                            Vaccine Phòng Bệnh Giảm Bạch Cầu
+                                        </td>
+                                        <td>
+                                            Cách mũi 1 từ 4 - 6 tuần
+                                        </td>
+                                        <td>Đã Tiêm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            03
+                                        </td>
+                                        <td>
+                                            Vaccine Phòng Bệnh Viêm Mũi
+                                        </td>
+                                        <td>
+                                            Cách mũi thứ 2 4 tuần
+                                        </td>
+                                        <td>Chưa Tiêm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>Vaccine Phòng Bệnh Herpervirus</td>
+                                        <td>16 Tuần Tuổi</td>
+                                        <td>Chưa Tiêm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                      Bông Gòn: Chó Samoyed
+                    </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        <span> Giới Tính: Cái </span>
+                        <table  id="table" class="table table-bordered text-center">
+                            <thead>
+                                <th>
+                                    STT
+                                </th>
+                                <th>
+                                   Tên vaccine
+                                </th>
+                                <th>
+                                    Thời gian
+                                </th>
+                                <th>
+                                    Tình trạng
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        01
+                                    </td>
+                                    <td>
+                                       Mũi 5 Bệnh
+                                    </td>
+                                    <td>
+                                        Từ 6 - 8 tuần tuổi
+                                    </td>
+                                    <td>
+                                        Đã Tiêm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        02
+                                    </td>
+                                    <td>
+                                        Mũi 7 Bệnh
+                                    </td>
+                                    <td>
+                                        Từ 10 - 12 Tuần Tuổi
+                                    </td>
+                                    <td>Đã Tiêm</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        03
+                                    </td>
+                                    <td>
+                                        Mũi 7 Bệnh
+                                    </td>
+                                    <td>
+                                        Từ 14 - 16 Tuần Tuổi
+                                    </td>
+                                    <td>Đã Tiêm</td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Vaccine Phòng Dại</td>
+                                    <td>13 Tháng (Nhắc lại mỗi năm)</td>
+                                    <td>Đã Tiêm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Ngáo: Chó Shiba
+                      </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                      <div class="card-body">
+                        <span> Giới Tính: Cái </span>
+                        <table  id="table" class="table table-bordered text-center">
+                            <thead>
+                                <th>
+                                    STT
+                                </th>
+                                <th>
+                                   Tên vaccine
+                                </th>
+                                <th>
+                                    Thời gian
+                                </th>
+                                <th>
+                                    Tình trạng
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        01
+                                    </td>
+                                    <td>
+                                       Mũi 5 Bệnh
+                                    </td>
+                                    <td>
+                                        Từ 6 - 8 tuần tuổi
+                                    </td>
+                                    <td>
+                                        Đã Tiêm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        02
+                                    </td>
+                                    <td>
+                                        Mũi 7 Bệnh
+                                    </td>
+                                    <td>
+                                        Từ 10 - 12 Tuần Tuổi
+                                    </td>
+                                    <td>Chưa Tiêm</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        03
+                                    </td>
+                                    <td>
+                                        Mũi 7 Bệnh
+                                    </td>
+                                    <td>
+                                        Từ 14 - 16 Tuần Tuổi
+                                    </td>
+                                    <td>Chưa Tiêm</td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Vaccine Phòng Dại</td>
+                                    <td>13 Tháng (Nhắc lại mỗi năm)</td>
+                                    <td>Chưa Tiêm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Content -->
 </body>
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
@@ -303,5 +627,4 @@
 <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
 </html>

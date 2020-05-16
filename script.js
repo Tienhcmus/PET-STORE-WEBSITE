@@ -54,3 +54,21 @@ function sum() {
     $('#sumproduct').html(sumproduct);
 }
 
+$('.unsignin').hide();
+$('.manage-pet').hide();
+$('#login-btn').click(function (){
+    $('.sign-in').show();
+    $('.unsignin').hide();
+});
+$('.logout').click(function (){
+    $('.sign-in').hide();
+    $('.unsignin').show();
+});
+$('.show-history').click(function (){
+    $('.manage-pet').hide();
+    $('.history-cart').show();
+})
+$('.show-manage').click(function (){
+    $('.manage-pet').show();
+    $('.history-cart').hide();
+})

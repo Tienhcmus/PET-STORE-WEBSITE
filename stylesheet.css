@@ -264,3 +264,17 @@ input[type="radio"] {
 .edit{
   border: none !important;
 }
+.sign-in a{
+  border-radius: 0;
+}
+.sign-in a:hover{
+  border-radius: 0;
+  background-color: #818181 !important;
+  color: white !important;
+}
+.username:hover{
+  border-radius: 0;
+  background-color: #818181 !important;
+  color: white !important;
+
+}
