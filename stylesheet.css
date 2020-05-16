@@ -276,5 +276,7 @@ input[type="radio"] {
   border-radius: 0;
   background-color: #818181 !important;
   color: white !important;
-
+}
+.card .collapse{
+  font-size: medium;
 }
